@@ -9,22 +9,6 @@ attributeTypes: ( 1.3.6.1.4.1.7914.1.2.1.1 NAME 'qmailUID' DESC 'UID of
 attributeTypes: ( 1.3.6.1.4.1.7914.1.2.1.2 NAME 'qmailGID' DESC 'GID of 
  the user on the mailsystem' EQUALITY integerMatch SYNTAX 1.3.6.1.4.1.1466.115
  .121.1.27 SINGLE-VALUE )
-attributeTypes: ( 1.3.6.1.4.1.7914.1.2.1.3 NAME 'mailMessageStore' DESC 
- 'Path to the maildir/mbox on the mail system' EQUALITY caseExactIA5Match SUBS
- TR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} SIN
- GLE-VALUE )
-attributeTypes: ( 1.3.6.1.4.1.7914.1.2.1.4 NAME 'mailAlternateAddress' D
- ESC 'Secondary (alias) mailaddresses for the same user' EQUALITY caseIgnoreIA
- 5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.
- 26{256} )
-attributeTypes: ( 1.3.6.1.4.1.7914.1.2.1.6 NAME 'mailHost' DESC 'On whic
- h qmail server the messagestore of this user is located.' EQUALITY caseIgnore
- IA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.
- 1.26{256} SINGLE-VALUE )
-attributeTypes: ( 1.3.6.1.4.1.7914.1.2.1.7 NAME 'mailForwardingAddress' 
- DESC 'Address(es) to forward all incoming messages to.' EQUALITY caseIgnoreIA
- 5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.
- 26{256} )
 attributeTypes: ( 1.3.6.1.4.1.7914.1.2.1.8 NAME 'deliveryProgramPath' DE
  SC 'Program to execute for all incoming mails.' EQUALITY caseExactIA5Match SU
  BSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
